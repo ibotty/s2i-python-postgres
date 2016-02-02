@@ -4,6 +4,7 @@ MAINTAINER Tobias Florek <tob@butter.sh>
 USER 0
 
 RUN yum install -y rh-postgresql94 rh-postgresql94-postgresql-devel \
+ && yum clean all \
  && sed -i '$a source scl_source enable rh-postgresql94' \
            /opt/app-root/etc/scl_enable
 
