@@ -1,4 +1,4 @@
-FROM centos/python-34-centos7:latest
+FROM centos/python-35-centos7:latest
 MAINTAINER Tobias Florek <tob@butter.sh>
 
 USER 0
